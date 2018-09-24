@@ -13,11 +13,11 @@ namespace IF_training
          string userInput = Console.ReadLine();
          int number = int.Parse(userInput);
          if (number == 0)
-         Console.WriteLine($"Numero {number} on nolla!");
+         Console.WriteLine($"Numero {number} on nolla");
          else if (number < 0)
-         Console.WriteLine($"Numero{number} on negatiivinen!");
+         Console.WriteLine($"Numero{number} on negatiivinen");
          else
-         Console.WriteLine($"Numero {number} on positiivinen!");
+         Console.WriteLine($"Numero {number} on positiivinen");
         }
     }
 }
