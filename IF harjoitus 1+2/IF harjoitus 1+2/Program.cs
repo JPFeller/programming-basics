@@ -12,6 +12,7 @@ namespace IF_harjoitus_1_2
             int number = 0;
             int.TryParse(userInput, out number);
             bool isNumber = int.TryParse(userInput, out number);
+
             if (isNumber)
                 if (number < 0)
                     Console.WriteLine($"Numero {number} on negatiivinen");

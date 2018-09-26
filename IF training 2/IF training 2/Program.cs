@@ -14,8 +14,10 @@ namespace IF_training_2
             bool isNumber = int.TryParse(userInput, out number);
 
             if (isNumber)
-                if (number % 2 == 0)
+                if (number % 2 == 0 && number != 0)
                     Console.WriteLine($"Numero {number} on parillinen");
+                else if (number == 0)
+                    Console.WriteLine($"Numero {number} on jakautumaton");
                 else
                     Console.WriteLine($"Numero {number} on pariton");
             else
