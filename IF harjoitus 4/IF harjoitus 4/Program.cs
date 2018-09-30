@@ -20,6 +20,7 @@ namespace IF_harjoitus_4
             int c = int.Parse(userInput);
 
 
+
             if (a < b && a < c)
                 if (b < c)
                     Console.WriteLine($"{a},{b},{c}");
