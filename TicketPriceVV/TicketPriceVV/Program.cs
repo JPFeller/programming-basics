@@ -21,7 +21,7 @@ namespace TicketPriceVV
                 userInput = Console.ReadLine();
                 if (userInput == "k")
                 {
-                    Console.WriteLine("Oletko MTK:n jäsen?");
+                    Console.WriteLine("Oletko MTK:n jäsen? k tai e");
                     userInput = Console.ReadLine();
                     if (userInput == "k")
                         discount = 0.60;
