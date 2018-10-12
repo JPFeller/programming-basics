@@ -9,7 +9,7 @@ namespace LoopTask3._2
             Console.WriteLine("Ohjelma laskee N ensimmäistä lukua yhteen");
             int number = 0;
             int i = 1;
-            int sum = 1;
+            int sum = 0;
             do
             {
                 Console.Write("Syötä luku: ");
