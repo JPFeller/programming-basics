@@ -20,9 +20,9 @@ namespace FunctionTask_5._4
                 if (number > 0)
                     i = i + 1;
                 if (!isNumber)
-                    Console.WriteLine("Virheellinen syöte!");
+                    Console.WriteLine("Virheellinen syöte");
                 else if (number <= 0)
-                    Console.WriteLine("Virheellinen luku!");
+                    Console.WriteLine("Virheellinen luku");
             }
             Console.WriteLine($"Syötit seuraavat luvut\n{number}");
 
