@@ -6,27 +6,43 @@ namespace FunctionTask_5._4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ohjelma pyytää kymmenen lukua ja palauttaa niistä suurimman");
-
-            int number = 0;
-            int i = 0;
-            int j = 1;
-
-            while (i < 10)
             {
-                Console.WriteLine($"Anna positiivinen kokonaisluku {j}: ");
-                j = j + 1;
-                bool isNumber = int.TryParse(Console.ReadLine(), out number);
-                if (number > 0)
-                    i = i + 1;
-                if (!isNumber)
-                    Console.WriteLine("Virheellinen syöte");
-                else if (number <= 0)
-                    Console.WriteLine("Virheellinen luku");
+                int maxIndex = 0;
+                Console.WriteLine("Ohjelma pyytää käyttäjältä 10 positiivista kokonaislukua ja palauttaa niistä suurimman.");
+                Console.WriteLine($"Suurin luku oli {Numbers(ref maxIndex)} ja se oli {maxIndex}.");
+                Console.ReadKey();
             }
-            Console.WriteLine($"Syötit seuraavat luvut\n{number}");
+            int Numbers(ref int maxIndex)
+            {
+                int nbr = 0;
+                int maxNbr = 0;
 
-            Console.WriteLine($"Suurin luvuista oli {number}");
+                bool isNumber;
+                string output = "";
+                Console.WriteLine("Syötä 10 positiivista kokonaislukua");
+
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.Write($"{i + 1}. ");
+                    isNumber = int.TryParse(Console.ReadLine(), out nbr);
+                    if (isNumber && nbr > 0)
+                    {
+                        output += $"{nbr} ";
+                        if (maxNbr < nbr)
+                        {
+                            maxNbr = nbr;
+                            maxIndex = i + 1;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Väärä syöte, syötä positiivinen luku");
+                        i--;
+                    }
+                }
+                Console.WriteLine($"Syötit seuraavat luvut:\n{output}\n");
+                return maxNbr;
+            }
         }
     }
 }
