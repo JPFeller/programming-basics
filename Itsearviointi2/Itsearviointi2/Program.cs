@@ -10,11 +10,11 @@ namespace Itsearviointi2
             Console.WriteLine("Syötä sana tai lause: ");
             string userInput = Console.ReadLine();
 
-            int len = userInput.Length;
+            int k = userInput.Length;
             int j = 0;
 
-            Console.WriteLine($"Merkkien lukumäärä: {len}");
-            for (int i = 0; i < len; i++)
+            Console.WriteLine($"Merkkien lukumäärä: {k}");
+            for (int i = 0; i < k; i++)
             {
                 j = j + 1;
                 Console.WriteLine($"{j}. {userInput}");
