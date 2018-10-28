@@ -8,8 +8,8 @@ namespace FunctionTask_5._4
         {
             {
                 int maxIndex = 0;
-                Console.WriteLine("Ohjelma pyytää käyttäjältä 10 positiivista kokonaislukua ja palauttaa niistä suurimman.");
-                Console.WriteLine($"Suurin luku oli {Numbers(ref maxIndex)} ja se oli {maxIndex}.");
+                Console.WriteLine("Ohjelma pyytää käyttäjältä 10 positiivista kokonaislukua ja palauttaa niistä suurimman");
+                Console.WriteLine($"Suurin luku oli {Numbers(ref maxIndex)} ja se oli {maxIndex}");
                 Console.ReadKey();
             }
             int Numbers(ref int maxIndex)
